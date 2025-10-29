@@ -1,6 +1,6 @@
 <p>data-binding works!</p>
-<table style="width: 100%; border: 1px solid gray;">
-  <tr style="background: purple; color: #fff;">
+<table style="width: 100%; border: 1px solid gray">
+  <tr style="background: purple; color: #fff">
     <!-- Using Interpolation We can Access Variable Name -->
     <td>{{ courseName }}</td>
     <td>{{ isActive }}</td>
@@ -9,8 +9,15 @@
     <td>{{ initialValue }}</td>
     <!-- Using Property Binding We can Access Variable Name -->
     <td>
-        <input type="text" [value]="initialValue" [minLength]="minLength" />
+      <input type="text" [value]="initialValue" [minLength]="minLength" />
     </td>
-    <td><input type="text" [(ngModel)]="initialValue"></td>
+    <td><input type="text" [(ngModel)]="initialValue" /></td>
   </tr>
 </table>
+<button (click)="handleClick()">Submit</button>
+<div class="calculator">
+  <input type="number" [(ngModel)]="number1" placeholder="Enter first number." />
+  <input type="number" [(ngModel)]="number2" placeholder="Enter second number." />
+  <button (click)="handleSum()">Add</button>
+  <input type="number" [(ngModel)]="result" readonly />
+</div>

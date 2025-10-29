@@ -15,7 +15,19 @@ export class DataBinding {
   minLength: number = 5;
   initialValue: number = 20;
 
+  number1: number = 0;
+  number2: number = 0;
+  result: number = 0;
+
   constructor() {
     console.log(this.courseName);
+  }
+
+  handleClick(): void {
+    alert('You click the button!');
+  }
+
+  handleSum() {
+    this.result = this.number1 + this.number2;
   }
 }

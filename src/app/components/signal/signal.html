@@ -1,0 +1,25 @@
+<p>signal works!</p>
+
+<div class="">
+  <p style="margin: 0px">
+    Course is -
+    <strong>{{ course }}</strong>
+  </p>
+  <p style="margin: 0px">
+    You have to access signal like this -
+    <strong>{{ courseName() }}</strong>
+  </p>
+
+  <button (click)="changeCourseDetails()">Change The Course Name</button>
+</div>
+<!-- <div class="">
+  <h3>Course List</h3>
+  <ul>
+    <li `ngFor`="let course of courseList()">{{ course }}</li>
+  </ul>
+</div> -->
+<div class="">
+  <h3>Course List</h3>
+  {{ courseList() }}
+  <button (click)="handleAddCourse('JavaScript')">Add Another Course</button>
+</div>

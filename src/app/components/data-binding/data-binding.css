@@ -1,0 +1,14 @@
+.calculator {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+}
+
+.calculator input {
+  width: 100px;
+}
+
+.calculator button {
+  width: 100px;
+}
