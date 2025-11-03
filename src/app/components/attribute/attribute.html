@@ -1,0 +1,34 @@
+<div class="row" [ngClass]="bodyBg" [ngStyle]="{ color: textColor, 'font-size': '12px' }">
+  <div class="col-4">
+    <table class="table table-border">
+      <thead>
+        <tr>
+          <th>Roll</th>
+          <th>Name</th>
+          <th>City</th>
+          <th>Roll</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        @for (item of studentList; track $index) {
+        <tr>
+          <td>{{ item.roll }}</td>
+          <td>{{ item.name }}</td>
+          <td>{{ item.city }}</td>
+          <td>{{ item.gender }}</td>
+          <td [ngClass]="item.status ? 'bg-success' : 'bg-danger'">
+            {{ item.status ? 'Active' : 'Inactive' }}
+          </td>
+        </tr>
+        }
+      </tbody>
+    </table>
+  </div>
+  <div class="col-4">
+    <h1>Middle Section</h1>
+  </div>
+  <div class="col-4">
+    <h1>End Section</h1>
+  </div>
+</div>
