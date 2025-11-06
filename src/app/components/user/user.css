@@ -1,0 +1,12 @@
+.user-card {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  cursor: pointer;
+}
+.user-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+.user-card .card-body {
+  background: #fffdf6;
+  border-radius: 0.5rem;
+}
